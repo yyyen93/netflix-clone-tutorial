@@ -1,0 +1,22 @@
+/* [1] import tailwind style */
+@tailwind base;
+@tailwind component;
+@tailwind utilities;
+
+/* [2] Body styling -  refers[Auth Screen UI.txt]*/
+body{
+  @apply bg-zinc-900 h-full overflow-x-hidden;
+  /* 
+    bg-zinc-900: background color
+    h-full: height full
+    overflow-x-hidden: hide the horizontal scroll
+  */
+}
+
+#__next{
+  @apply h-full;
+}
+
+html{
+  @apply h-full;
+}
