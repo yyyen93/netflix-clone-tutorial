@@ -26,8 +26,9 @@ export const authOptions: AuthOptions = {
         },
         password: {
           label: 'Password',
-          type: 'passord'
+          type: 'password'
         }
+        // TypeError caused profiles&error=OAuthAccountNotLinked , solution is to replace type:'password'
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) {
